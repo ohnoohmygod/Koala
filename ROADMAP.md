@@ -29,10 +29,12 @@ koala/
 - [x] Agent 基类（tool calling 循环，同步+异步）
 - [x] ShortTermMemory（消息管理，token 估算）
 
-### Phase 2: SubAgent 异步并发 🔜
-- [ ] SubAgent 定义（独立 system_prompt、工具集）
-- [ ] AgentRunner（asyncio.gather 并发调度多个 SubAgent）
-- [ ] 结果聚合与回传
+### Phase 2: SubAgent 异步并发 ✅
+- [x] SubAgent 定义（独立 system_prompt、工具集）
+- [x] AgentRunner（asyncio.gather 并发调度多个 SubAgent）
+- [x] 结果聚合与回传
+- [x] 任务系统（TaskStore, TaskScheduler, TaskNotifier）
+- [x] 任务工具化（CreateTaskTool, QueryTaskTool, AssignTaskTool）
 
 ### Phase 3: 上下文增强 🔜
 - [ ] 长期记忆（跨对话持久化）
